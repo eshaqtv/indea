@@ -1,0 +1,342 @@
+
+<head>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<title>IQTV</title>
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#myInput').on('input', function() {
+var value = $(this).val().toLowerCase();
+$('.gallery >.poster').filter(function() {
+$(this).toggle($(this).find('a').attr('title').toLowerCase().indexOf(value) > -1)});});});
+</script>
+<style type="text/css">
+*{-webkit-tap-highlight-color:transparent;user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+html,body{background-color:#111;padding:0;margin:0;}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+#w-movie{margin-top:1px;display:flex;width:100%;height:130px;color:white;background:#000;border:0px solid #fff;border-radius:0px;}
+#w-movie #w-img{height:90px;width:140px;background:transparent;}
+#w-img img{background:#000;border-radius:7px;margin-top:0px;height:120px;width:100px;}
+#w-movie #wm-details{margin-top:20px;margin-left:-15px;/*padding:1px 1px;*/}
+html{min-height:100%;position:relative;}
+a{background:#00000000;color:#fff;padding:5px;display:block;text-align:left;text-decoration:none;}
+.bt1{background:#145678;color:#000;border:2px solid red;font-size:15px;}
+#xaviec{background:#00000000;position:fixed;top:-5px;width:100%;z-index:90;height:8%;}
+.xs{margin-top:46px;}
+.xssearch{background:#000;color:#fff;Width:100%;height:50px;border-radius:0px;outline:none;border:0px;padding:4px 4px;font-size:20px;}
+::placeholder{color:#fff;/*font-size:20px;*/}}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+#w-movie{margin-top:1px;display:flex;width:100%;height:130px;color:white;background:#000;border:0px solid #fff;border-radius:0px;}
+#w-movie #w-img{height:90px;width:140px;background:transparent;}
+#w-img img{background:#000;border-radius:7px;margin-top:0px;height:120px;width:100px;}
+#w-movie #wm-details{margin-top:20px;margin-left:-15px;/*padding:1px 1px;*/}
+html{min-height:100%;position:relative;}
+a{background:#00000000;color:#fff;padding:5px;display:block;text-align:left;text-decoration:none;}
+.bt1{background:#145678;color:#000;border:2px solid red;font-size:15px;}
+#xaviec{background:#00000000;position:fixed;top:-5px;width:100%;z-index:90;height:8%;}
+.xs{margin-top:46px;}
+.xssearch{background:#000;color:#fff;Width:100%;height:50px;border-radius:0px;outline:none;border:0px;padding:4px 4px;font-size:20px;}
+::placeholder{color:#fff;/*font-size:20px;*/}}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+#w-movie{margin-top:1px;display:flex;width:100%;height:160px;color:white;background:#000;border:0px solid #fff;border-radius:0px;}
+#w-movie #w-img{height:90px;width:140px;background:transparent;}
+#w-img img{background:#000;border-radius:7px;margin-top:0px;height:150px;width:110px;}
+#w-movie #wm-details{margin-top:20px;margin-left:-15px;/*padding:1px 1px;*/}
+html{min-height:100%;position:relative;}
+a{background:#00000000;color:#fff;padding:5px;display:block;text-align:left;text-decoration:none;}
+.bt1{background:#145678;color:#000;border:2px solid red;font-size:15px;}
+#xaviec{background:#00000000;position:fixed;top:-5px;width:100%;z-index:90;height:8%;}
+.xs{margin-top:46px;}
+.xssearch{background:#000;color:#fff;Width:100%;height:50px;border-radius:0px;outline:none;border:0px;padding:4px 4px;font-size:20px;}
+::placeholder{color:#fff;/*font-size:20px;*/}}
+@media only screen and (min-width: 992px) {
+#w-movie{margin-top:1px;display:flex;width:100%;height:190px;color:white;background:#000;border:0px solid #fff;border-radius:0px;}
+#w-movie #w-img{height:90px;width:140px;background:transparent;}
+#w-img img{background:#000;border-radius:7px;margin-top:0px;height:180px;width:100px;}
+#w-movie #wm-details{margin-top:20px;margin-left:-15px;/*padding:1px 1px;*/}
+html{min-height:100%;position:relative;}
+a{background:#00000000;color:#fff;padding:5px;display:block;text-align:left;text-decoration:none;}
+.bt1{background:#145678;color:#000;border:2px solid red;font-size:15px;}
+#xaviec{background:#00000000;position:fixed;top:-5px;width:100%;z-index:90;height:8%;}
+.xs{margin-top:46px;}
+.xssearch{background:#000;color:#fff;Width:100%;height:50px;border-radius:0px;outline:none;border:0px;padding:4px 4px;font-size:20px;}
+::placeholder{color:#fff;/*font-size:20px;*/}}
+@media only screen and (min-width: 1200px) {
+#w-movie{margin-top:1px;display:flex;width:100%;height:220px;color:white;background:#000;border:0px solid #fff;border-radius:0px;}
+#w-movie #w-img{height:90px;width:140px;background:transparent;}
+#w-img img{background:#000;border-radius:7px;margin-top:0px;height:210px;width:100px;}
+#w-movie #wm-details{margin-top:20px;margin-left:-15px;/*padding:1px 1px;*/}
+html{min-height:100%;position:relative;}
+a{background:#00000000;color:#fff;padding:5px;display:block;text-align:left;text-decoration:none;}
+.bt1{background:#145678;color:#000;border:2px solid red;font-size:15px;}
+#xaviec{background:#00000000;position:fixed;top:-5px;width:100%;z-index:90;height:8%;}
+.xs{margin-top:46px;}
+.xssearch{background:#000;color:#fff;Width:100%;height:50px;border-radius:0px;outline:none;border:0px;padding:4px 4px;font-size:20px;}
+::placeholder{color:#fff;/*font-size:20px;*/}}
+</style>
+</head>
+<body>
+<body ondragstart="return false" ondrop="return false" onselectstart="return false" oncontextmenu="return false">
+<div id="xaviec">
+<input id="myInput" type="search" placeholder="Search" size="12" class="xssearch">
+</div>
+<div class="xs">
+<div class="CNMUB">
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="https://eshaqtv.github.io/film/"><i class="fa fa-fw fa-home"></i> Home</a>
+</div>  
+<a href="https://instagram.com/mustafa_ahmed9090"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a class="CNB1" href="https://play.google.com/store/apps/details?id=com.linkbox.plus.android" target="_blank">
+    <i class="fa fa-download"></i>   
+    <span>TeleBox Android (APK)
+    </span> </a><div class="CNMUB">
+    <a class="CNB1" href="https://apps.apple.com/us/app/linkbox-cloud-file-storage/id6447232515" target="_blank">
+    <i class="fa fa-download"></i>   
+    <span>TeleBox iPhone (IOS) </span> 
+    </a>
+<div class="gallery">
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/JarCZwo?d=true" title="Bholaa"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/melcoQ9EQli2Wt9XeMdQ3f3qs5J.jpg"></a></div>
+<div id="wm-details"><div>Bholaa</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 22m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.7
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/Dh2QCTG?d=true" title="Vaathi"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cRmYL2svlkgDUh2IoUTRHsX1YYr.jpg"></a></div>
+<div id="wm-details"><div>Vaathi </div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 14m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.5
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/Tr8tTBQ?d=true" title="Pathaan"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arf00BkwvXo0CFKbaD9OpqdE4Nu.jpg"></a></div>
+<div id="wm-details"><div>Pathaan </div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 28m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.3
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/fLzBZYc?d=true" title="Rekha"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xisCyIqvnramPRlpYrU0tnm0caq.jpg"></a></div>
+<div id="wm-details"><div>Rekha </div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 01m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.3
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/sJnbz4p?d=true" title="Kuttey "><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bwJHR0qzAvJLKy7EioiSRu0QivY.jpg"></a></div>
+<div id="wm-details"><div>Kuttey </div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 1h 48m</div>
+<span style="color: #ff6600;">IMDb</span> : 5.9
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/Q98DCBZ?d=true" title="Thalaikoothal"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2mD5OmH58hWaEGEQVGbZcVBVH5D.jpg"></a></div>
+<div id="wm-details"><div>Thalaikoothal</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 20m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.4
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/GDNyxLW?d=true" title="Mission Majnu"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jHQitiHK4M561W1O7WwfJ0dJ8S1.jpg"></a></div>
+<div id="wm-details"><div>Mission Majnu</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 09m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.9
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/PDiLAxm?d=true" title="Dial 100"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t9ncR9DFRfa6XW0uh28B36CBh4U.jpg"></a></div>
+<div id="wm-details"><div>Dial 100</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 1h 44m</div>
+<span style="color: #ff6600;">IMDb</span> : 5.9
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2023</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/2VvYECP?d=true" title="Vendhu Thanindhathu Kaadu"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5Sb9aBfsVCQSHrU8p1akIK0g2t0.jpg"></a></div>
+<div id="wm-details"><div>Vendhu Thanindhathu Kaadu</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 52m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.4
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/C723FVC?d=true" title="Sita Ramam"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aPqVVm5VlzUiHVLd5c07PdRycEa.jpg"></a></div>
+<div id="wm-details"><div>Sita Ramam </div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 38m</div>
+<span style="color: #ff6600;">IMDb</span> : 8.6
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/LTadxg5?d=true" title="Runway 34"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8RlQEuxeRqHh7sWTRswdUC9kP3H.jpg"></a></div>
+<div id="wm-details"><div>Runway 34 </div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 25m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.0
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i> 2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/GtL35J2?d=true" title="Kantara"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9fVBhpOnTXElQGyRiGM9PJfUolD.jpg"></a></div>
+<div id="wm-details"><div>Kantara</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 27m</div>
+<span style="color: #ff6600;">IMDb</span> : 8.3
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/LcAWXP3?d=true" title="Pathonpatham Noottandu"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tL1pf85mtn1SEHODLetoHRGdxnN.jpg"></a></div>
+<div id="wm-details"><div>Pathonpatham Noottandu</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 36m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.9
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/XRLIdfC?d=true" title="Ram Setu"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d14btEr1IdwITOpwsktGLYJ8O5v.jpg"></a></div>
+<div id="wm-details"><div>Ram Setu</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 28m</div>
+<span style="color: #ff6600;">IMDb</span> : 5.2
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/Ib9xqvL?d=true" title="Vadh"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lgv1gGpX1Q9EjEiFYNJqC6nX1MF.jpg"></a></div>
+<div id="wm-details"><div>Vadh</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 1h 49m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.1
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://lbx.to/f/aaNUk62" title="Code Name Tiranga"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mAcdxgmbLvflTz9cASmsURO09N2.jpg"></a></div>
+<div id="wm-details"><div>Code Name Tiranga</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 14m</div>
+<span style="color: #ff6600;">IMDb</span> : 4.2
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/MQGVwZo?d=true" title="Kumari"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9nRd2JAPOngLX5PTyf8Bv4SCN70.jpg"></a></div>
+<div id="wm-details"><div>Kumari</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 14m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.5
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/rDNMmfI?d=true" title="Goodbye"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pRexHlZOhOwTJBXtRpMAeSbHk4H.jpg"></a></div>
+<div id="wm-details"><div>Goodbye</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 21m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.3
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2022</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/jJMASg2?d=true" title="Tribhanga"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lbGINHbqJ7zYcIpsoIaEEASNrBM.jpg"></a></div>
+<div id="wm-details"><div>Tribhanga</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 1h 35m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.2
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2021</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/IhVz9jq?d=true" title="Antim The Final Truth"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4xwA1zOCDaZlnE2HbaWb7bU8daF.jpg"></a></div>
+<div id="wm-details"><div>Antim The Final Truth</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 20m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.7
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2021</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/I5jeLPH?d=true" title="Bhoot Part One - The Haunted Ship"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5rSRVvlIlelgKM58MAnnk4FId86.jpg"></a></div>
+<div id="wm-details"><div>Bhoot Part One - The Haunted Ship</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 1h 54m</div>
+<span style="color: #ff6600;">IMDb</span> : 5.4
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2020</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/ugL5kwM?d=true" title="AK vs AK"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4ULEEvH0hDYnbWN3nClrb88sYCF.jpg"></a></div>
+<div id="wm-details"><div>AK vs AK</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 1h 49m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.9
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2020</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/qJpYskz?d=true" title="Badla"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eKpzbERuhogYTwI3PwfVsAHXnuO.jpg"></a></div>
+<div id="wm-details"><div>Badla</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 00m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.8
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2019</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/LXARugL?d=true" title="Begum Jaan"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/spjYSwKazSQEkeMywBZIpnzilQp.jpg"></a></div>
+<div id="wm-details"><div>Begum Jaan</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 07m</div>
+<span style="color: #ff6600;">IMDb</span> : 5.7
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2017</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/U2cQFen?d=true" title="Raees"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zFYFUfnoXWxeA3n7v4acEqgk2iE.jpg"></a></div>
+<div id="wm-details"><div>Raees</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 23m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.6
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2017</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/4SFkczG?d=true" title="Natsamrat"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/idpdndC9eRM4CLH3rttMaMAeXv.jpg"></a></div>
+<div id="wm-details"><div>Natsamrat</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 45m</div>
+<span style="color: #ff6600;">IMDb</span> : 8.8
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2016</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/k4a8zOH?d=true" title="Pink"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6xNhnyKm2M5FEOY7xv5iKiQ5P3.jpg"></a></div>
+<div id="wm-details"><div>Pink</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 16m</div>
+<span style="color: #ff6600;">IMDb</span> : 8.1
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2016</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/id8pEff?d=true" title="Bajrangi Bhaijaan"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rNfToRJw35h7a4y6HXGRgfkLvdc.jpg"></a></div>
+<div id="wm-details"><div>Bajrangi Bhaijaan</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 39m</div>
+<span style="color: #ff6600;">IMDb</span> : 8.1
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2015</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/GS8t8Zf?d=true" title="Talaash The Answer Lies Within"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oCxyN7HmJ7zWp8jtJeMRHABnutF.jpg"></a></div>
+<div id="wm-details"><div>Talaash The Answer Lies Within</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 20m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.2
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2012</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/ITmMOHx?d=true" title="Jab Tak Hai Jaan"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1TlzJZrzUlaC95Noqt3oMoxQxCu.jpg"></a></div>
+<div id="wm-details"><div>Jab Tak Hai Jaan</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 56m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.7
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>2012</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/XVCzIYP?d=true" title="Baadshah"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fXGeUIbEfgO3cfHuYuPkXnKVt43.jpg"></a></div>
+<div id="wm-details"><div>Baadshah</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 55m</div>
+<span style="color: #ff6600;">IMDb</span> : 6.8
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>1999</div><br>
+</div></div></div>
+<div class="poster"><div id="w-movie">
+<div id="w-img"><a href="https://www.linkbox.to/a/f/zipSXWY?d=true" title="Ghulam"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b1Nq1gKCp7JhwkCzmb5x9XGkmLu.jpg"></a></div>
+<div id="wm-details"><div>Ghulam</div>
+<div style="font-weight:bold;color:#666;"><i class="fas fa-clock" style="font-weight:bold;color:#eee;"></i> 2h 42m</div>
+<span style="color: #ff6600;">IMDb</span> : 7.2
+<div style="font-weight:bold;color:#2196F3;"><i class="fas fa-calendar-alt" style="font-weight:bold;color:#eee;"></i>1998</div><br>
+</div></div></div>
+
+
+
+
+<!--NO TOCAR-->
+</div></div>
+
+
+
+
+
+
+
